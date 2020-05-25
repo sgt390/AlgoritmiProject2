@@ -28,6 +28,7 @@ def to_str(table):
     table = list(map(lambda row: list(map(str, row)), table))
     str_res = f"{''.join(['-' for _ in range(114)])}\n"
     str_res += f"{' ':^14}|{'Held Karp':^32}|{'Random':^32}|{'TSP':^32}\n"
+    str_res += f"{' ':^14}|{'Weight':^10} {'Time':^10} {'Error':^10}|{'Weight':^10} {'Time':^10} {'Error':^10}|{'Weight':^10} {'Time':^10} {'Error':^10}\n"
     str_res += f"{''.join(['-' for _ in range(114)])}\n"
     for x in table:
         str_res += f"{x[0]:^14}|{x[1]:^10} {x[2]:^10} {x[3]:^10}|{x[4]:^10} {x[5]:^10} {x[6]:^10}|{x[7]:^10} {x[8]:^10} {x[9]:^10}\n"
